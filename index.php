@@ -1,7 +1,5 @@
 <?php
 
-
-
 # Load bootstrap to apply configuration
 include("config/bootstrap.php");
 
