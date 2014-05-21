@@ -75,7 +75,6 @@ div.login label {
 }
 
 div.login input {
-
 }
 
 button#login {
@@ -88,4 +87,8 @@ button#login {
 div#userArea {
 	float:  	right;
 	margin: 	5px 5px 0 0;
+}
+
+div.error {
+	color: red;
 }

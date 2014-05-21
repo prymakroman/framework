@@ -11,11 +11,29 @@ function authCheck($array) {
 }
 
 function processAuth($array) {
-	if ($array["userId"]) {
-		$_SESSION["userId"] = $array["userId"];
-		return true;
+
+	$username = mysql_escape_string($array["userId"]);
+
+	$sql = "SELECT 
+			  *
+			FROM 
+				auth_user
+			WHERE
+				username = '" . $array["userId"] . "'";
+
+	$res = mysql_query($sql);
+
+	$row = mysql_fetch_assoc($res);
+
+	if (!$row) {
+		
+		return false;
+	}
+	elseif (md5($array["password"]) != $row["password"]) {
+		return false;
 	}
 	else {
-		return false;
+		$_SESSION["userId"] = $array["userId"];
+		return true;
 	}
 }
