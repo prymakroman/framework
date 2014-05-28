@@ -8,7 +8,7 @@
     		<input type="text" id="userId" name="userId" />
     		<br />
     		<label>Password:</label>
-    		<input type="text" id="password" name="password" />
+    		<input type="password" id="password" name="password" />
     		<button id="login" name="login">Login</button>
     		<br class=" clear" />
     	</div>

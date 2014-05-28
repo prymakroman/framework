@@ -11,7 +11,7 @@ switch ( $_GET["a"] ) {
 
 	case "category":
     	$categories = loadCategories();
-    	$products = loadProducts($_GET["id"]);
+    	$products = loadProductsByCategory($_GET["id"]);
         include( APP_VIEW ."/product/productSubNav.php" );
         include( APP_VIEW ."/product/productView.php" );
         break;
@@ -57,7 +57,7 @@ function loadCategories() {
 
 }
 
-function loadProductsByCategory() {
+function loadProductsByCategory($category) {
 	$products = array();
 	$sql = "SELECT *
 			FROM product
@@ -69,12 +69,12 @@ function loadProductsByCategory() {
 	$i = 0;
 	while( $row = mysql_fetch_assoc($res)) {
 
-		$categories[$i]["id"] 			= $row["id"];
-		$categories[$i]["name"] 		= $row["name"];
-		$categories[$i]["description"] 	= $row["description"];
+		$products[$i]["id"] 			= $row["id"];
+		$products[$i]["name"] 		= $row["name"];
+		$products[$i]["description"] 	= $row["description"];
 		$i++;
 	}
 
-	return $categories;
+	return $products;
 
 }

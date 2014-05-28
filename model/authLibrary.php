@@ -3,7 +3,14 @@
 function authCheck($array) {
 
 	if ($array["userId"]) {
-		return true;
+		if ($_SESSION["userData"] = APP_SESSION_KEY) {
+			return true;
+		}
+		else {
+			$_SESSION = 0;
+			session_destroy();
+			return false;
+		}
 	}
 	else {
 		return false;
@@ -34,6 +41,7 @@ function processAuth($array) {
 	}
 	else {
 		$_SESSION["userId"] = $array["userId"];
+		$_SESSION["userData"] = APP_SESSION_KEY;
 		return true;
 	}
 }
