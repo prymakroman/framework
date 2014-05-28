@@ -1,5 +1,9 @@
 body {
 	display:	block;
+/*	width: 920px;
+	margin: 0;
+	padding: 0;
+	font-family: "lucida grande", Calibri, Arial, sans-serif;*/
 }
 
 #content {
@@ -14,12 +18,47 @@ body {
     height: 	150px;
     border: 	thin solid black; 
 }
+/*
+#navigation {
+	overflow: hidden;
+	height: 35px;
+	background: #3b5999;
+}
+
+#navigation a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#navigation ul {
+	margin: 7px 0 0 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#navigation ul li {
+	display: inline;
+}
+
+#navigation ul li a {
+	padding: 10px;
+}
+
+#navigation ul li a:hover {
+	background: #5785e0;
+}*/
 
 #nav {
 	position: 	static;
-	width: 	 	900px;
+	width: 	 	890px;
 	height: 	50px;
 	border: 	thin solid black;
+	padding: 	5px;
+}
+
+div#nav. a {
+	display: block;
+	margin-top: 15px;
 }
 
 #subNav {

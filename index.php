@@ -15,14 +15,18 @@ if ("processAuth" != $_GET["a"] && !authCheck($_SESSION)) {
 # Route request to desired controller
 switch ($_GET["q"]) {
 
+    case "auth":
+        include( APP_CONTROLLER . "/authController.php");
+        break;
+    
     case "home":
         include( APP_CONTROLLER . "/homeController.php");
         break;
 
-    case "auth":
-        include( APP_CONTROLLER . "/authController.php");
+    case "product":
+        include( APP_CONTROLLER . "/productController.php");
         break;
-
+        
     default:
         include( APP_CONTROLLER . "/homeController.php");
         break;
