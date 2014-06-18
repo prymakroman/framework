@@ -1,28 +1,25 @@
 body {
 	display:	block;
-/*	width: 920px;
-	margin: 0;
-	padding: 0;
-	font-family: "lucida grande", Calibri, Arial, sans-serif;*/
 }
 
 #content {
-    
+    height: auto;
 	width: 900px;
 	margin: auto;
 }
 
 #topPage {
+	background: #ddd;
     position: 	static;
     width: 		900px;
     height: 	150px;
-    border: 	thin solid black; 
 }
-/*
+
 #navigation {
 	overflow: hidden;
 	height: 35px;
-	background: #3b5999;
+	background: #746e6e;
+	width: 	 	900px;
 }
 
 #navigation a {
@@ -38,6 +35,7 @@ body {
 
 #navigation ul li {
 	display: inline;
+	padding-left: 10px;
 }
 
 #navigation ul li a {
@@ -46,88 +44,57 @@ body {
 
 #navigation ul li a:hover {
 	background: #5785e0;
-}*/
-
-#nav {
-	position: 	static;
-	width: 	 	890px;
-	height: 	50px;
-	border: 	thin solid black;
-	padding: 	5px;
-}
-
-div#nav. a {
-	display: block;
-	margin-top: 15px;
 }
 
 #subNav {
+	background: #ddd;
 	position: 	static;
 	float: 		left;
 	width: 		200px;
-	height:		500px;
-	border: 	thin solid black;
+	height:		470px;
+}
+
+#subNav h1 {
+	margin-left: 2%
 }
 
 #page {
+	background: #ddd;
 	position: 	static;
 	float:		right;
-	width:  	696px;
-	height:		500px;
-	border: 	thin solid black;
+	width:  	699px;
+	height:		auto;
+	min-height: 470px;
+	border-left: 1px solid #746e6e;
+}
+
+#page h2 {
+	margin-left: 2%
 }
 
 #pageFullWidth {
+	overflow: hidden;
+	background: #ddd;
 	position: 	static;
 	width:  	900px;
-	height:		500px;
-	border: 	thin solid black;
-}
-#footer {
-	position: 	static;
-	clear:		both;
-	width:  	900px;
-	height: 	50px;
-	border: 	thin solid black;
+	height:		auto;
+	padding-bottom: 15px;
 }
 
-br.clear {
-	clear:  	both;
+#pageFullWidth h1 {
+	margin-left: 2%
 }
 
-/* Login Styles*/
-
-div.login {
-	margin: 	100px auto;
-	padding: 	25px;
-	width: 		300px;
-	border: 	thin solid black;
+.content {
+	margin-left: 40%;
 }
 
-div.login label {
-	display: 	block;
-	float: 		left;
-	clear: 		left;
-	width: 		100px;
-	margin: 	4px 0;
-
+.square {
+	padding-left: 20px;
 }
 
-div.login input {
-}
-
-button#login {
-	display: 	block;
-	clear: 		both;
-	float: 		right;
-	margin: 	25px 25px 0 0;
-}
-
-div#userArea {
-	float:  	right;
-	margin: 	5px 5px 0 0;
-}
-
-div.error {
-	color: red;
+.brand img {
+	position: static;
+	margin-left: 31%;
+	margin-top: 20px;
 }

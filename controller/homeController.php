@@ -8,19 +8,12 @@ include(APP_VIEW . "/header.php");
 # Include main navigation
 include(APP_VIEW . "/nav.php");
 
+include(APP_MODEL . "/classQueryLibrary.php");
+	
+$logged_user_id = 1;
 
-switch ( $_GET["a"] ) {
-
-    case "home":
-        include( APP_VIEW ."/home/homeSubNav.php" );
-        include( APP_VIEW ."/home/homeView.php" );
-        break;
-
-    default:
-        include( APP_VIEW ."/home/homeSubNav.php" );
-        include( APP_VIEW ."/home/homeView.php" );
-        break;
-}
+include( APP_VIEW ."/home/homeSubNav.php" );
+include( APP_VIEW ."/home/homeView.php" );
 
 
 # Include html footer
